@@ -20,7 +20,7 @@ Client.on("messageCreate", message => {
     }
 
     if(message.content === prefix + "étaton") {
-        message.channel.send("**Le serveur est on !** \n@everyone")
+        message.channel.send("**Serveur on, connecter vous !!!** \n||@everyone||")
     }
     
 });
