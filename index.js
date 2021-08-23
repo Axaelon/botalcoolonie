@@ -18,6 +18,10 @@ Client.on("messageCreate", message => {
     if(message.content === prefix + "ping"){
         message.channel.send("pong")
     }
+
+    if(message.content === prefix + "étaton") {
+        message.channel.send("**Le serveur est on !** \n@everyone")
+    }
     
 });
 
