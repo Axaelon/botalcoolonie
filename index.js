@@ -26,6 +26,7 @@ Client.on("guildMemberAdd", member => {
     console.log("Nouveau membre !");
     //<@>
     Client.channels.cache.get("851561546031038544").send("<@" + member.id + "> viens boire un coup ! :beers:");
+    member.roles.add("834546342100467733");
 });
 
 Client.on("guildMemberRemove", member => {
