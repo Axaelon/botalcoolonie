@@ -24,11 +24,12 @@ Client.on("messageCreate", message => {
 
 Client.on("guildMemberAdd", member => {
     console.log("Nouveau membre !");
-    Client.channels.cache.get("851561546031038544").send(`@${member.displayName} viens boire un coup ! :beers:`);
+    Client.channels.cache.get("851561546031038544").send(mention.member.displayName + " viens boire un coup ! :beers:");
 });
 
 Client.on("guildMemberRemove", member => {
     console.log("Un membre a quitté le serveur.");
+    Client.channels.cache.get("847575039029411891").send(member.displayName + " a fait un coma éthylique :sob:");
 });
 
 
