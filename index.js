@@ -2,7 +2,8 @@ const Discord = require("discord.js");
 const Client = new Discord.Client({
     intents: [
         Discord.Intents.FLAGS.GUILDS,
-        Discord.Intents.FLAGS.GUILD_MESSAGES
+        Discord.Intents.FLAGS.GUILD_MESSAGES,
+        Discord.Intents.FLAGS.GUILD_MEMBERS
     ]
 });
 
@@ -18,11 +19,15 @@ Client.on("messageCreate", message => {
     if(message.content === prefix + "ping"){
         message.channel.send("pong")
     }
-
-    if(message.content === prefix + "étaton") {
-        message.channel.send("**Serveur on, connecter vous !!!** \n||@everyone||")
-    }
     
+});
+
+Client.on("guildMemberAdd", member => {
+    console.log("Nouveau membre !");
+});
+
+Client.on("guildMemberRemove", member => {
+    console.log("Un membre a quitté le serveur.");
 });
 
 
