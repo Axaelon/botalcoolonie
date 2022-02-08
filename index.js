@@ -19,6 +19,10 @@ Client.on("messageCreate", message => {
     if(message.content === prefix + "ping"){
         message.channel.send("pong")
     }
+
+    if(message.content === prefix + "1"){
+        message.channel.send("Je paye ma tournée !!!")
+    }
     
 });
 
