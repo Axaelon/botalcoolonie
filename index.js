@@ -16,12 +16,16 @@ Client.on("ready", () => {
 Client.on("messageCreate", message => {
     if (message.author.bot) return;
 
-    if(message.content === prefix + "ping"){
-        message.channel.send("pong")
+    if (message.content === prefix + "test"){
+        message.channel.send("Je suis la bg")
     }
 
-    if(message.content === prefix + "1"){
+    if (message.content === prefix + "1"){
         message.channel.send("Je paye ma tournée !!!")
+    }
+
+    if (message.content === prefix + "damso"){
+        message.channel.send(">play https://open.spotify.com/artist/2UwqpfQtNuhBwviIC0f2ie?si=0vQmlmBhQHOpOolkddGD9A")
     }
     
 });
