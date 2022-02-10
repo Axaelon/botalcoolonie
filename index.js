@@ -24,6 +24,10 @@ Client.on("messageCreate", message => {
         message.channel.send("Je paye ma tournée !!!")
     }
 
+    if (message.content === prefix + "69"){
+        message.channel.send("Ca va la friendzone les gars ?")
+    }
+
     if (message.content === prefix + "damso"){
         message.channel.send(">play https://open.spotify.com/artist/2UwqpfQtNuhBwviIC0f2ie?si=0vQmlmBhQHOpOolkddGD9A")
     }
